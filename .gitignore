@@ -4,3 +4,5 @@
 .Ruserdata
 .gittoken
 inst/doc
+/doc/
+/Meta/
