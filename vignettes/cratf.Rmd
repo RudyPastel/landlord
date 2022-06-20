@@ -1,0 +1,29 @@
+---
+title: "Packages, tools and paradigms"
+author: "Rudy Pastel"
+date: "`r format(Sys.time(), '%A %d %B %Y')`"
+output: 
+  rmarkdown::html_vignette:
+  html_document:
+    fig_caption: false
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 3
+vignette: >
+  %\VignetteIndexEntry{Packages, tools and paradigms}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(landlord)
+```

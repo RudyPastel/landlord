@@ -63,6 +63,6 @@ with
 ## Training and showcase
 
 `landlord` helps its developer hone his craft too by providing an
-opportunity to try out and hopefully master packages, tools and
-paradigms. This is documented in the craft vignette:
+opportunity to learn and hopefully master packages, tools and paradigms.
+This is documented in the craft vignette:
 `utils::RShowDoc(what = 'craft', type = "html", package = 'landlord')`.

@@ -32,3 +32,28 @@ library(landlord)
 `landlord` helps budding investor in their first steps. For an investor, 
 a property and a loan, it calculates future cash flows and profitability. 
 For convenience sake, this can be done via a Shiny dashboard too. 
+
+
+## Investor
+
+The investor is currently modeled by the maximal down payment he is willing to invest
+and how much monthly pay he is will to commit to the bank.
+Future investor features may be his age, profession and free cash flow.
+
+## Property
+
+The property is currently modeled only in terms of money
+
+*   Purchase price
+*   Renovation costs
+*   Legal fees
+*   Realtor fees
+*   Potential rental income
+
+Future property features may be its age, location and attractiveness.
+
+
+## Loan
+
+The loan is a [fixed-rate mortgage (FRM)]{https://en.wikipedia.org/wiki/Fixed-rate_mortgage}.
+Either the monthly payment is set or the loan term i.e. its duration is fixed.

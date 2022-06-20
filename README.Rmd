@@ -63,5 +63,5 @@ For more about how to use `landlord`, read the introduction vignette with
 ## Training and showcase
 
 `landlord` helps its developer hone his craft too by providing an opportunity to
-try out and hopefully master packages, tools and paradigms. This is documented 
+learn and hopefully master packages, tools and paradigms. This is documented 
 in the craft vignette: `utils::RShowDoc(what = 'craft', type = "html", package = 'landlord')`.
