@@ -1,8 +1,18 @@
 ---
-title: "landlord"
-output: rmarkdown::html_vignette
+title: "The landlord package: decide whether a rental property investment is profitable"
+author: "Rudy Pastel"
+date: "`r format(Sys.time(), '%A %d %B %Y')`"
+output: 
+  rmarkdown::html_vignette:
+  html_document:
+    fig_caption: false
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 3
 vignette: >
-  %\VignetteIndexEntry{landlord}
+  %\VignetteIndexEntry{intro}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,3 +27,8 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(landlord)
 ```
+
+
+`landlord` helps budding investor in their first steps. For an investor, 
+a property and a loan, it calculates future cash flows and profitability. 
+For convenience sake, this can be done via a Shiny dashboard too. 

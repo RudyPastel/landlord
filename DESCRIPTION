@@ -8,14 +8,13 @@ Authors@R:
     role = c("aut", "cre"),
     email = "rudy.pastel@gmail.com"
   )
-Description: For an investor, an property and loan, the landlord package calculates
-  furture cashflows and profitability. For convenience sake, this can be done
+Description: For an investor, a property and a loan, the landlord package calculates
+  future cash flows and profitability. For convenience sake, this can be done
   via a Shiny dashboard too.
 License: `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Suggests: 
-    knitr,
-    rmarkdown
+    knitr
 VignetteBuilder: knitr
