@@ -1,2 +1,2 @@
 # landlord
-Decide whether a real-estate investment is profitable
+Decide whether a real-estate investment is profitable.
