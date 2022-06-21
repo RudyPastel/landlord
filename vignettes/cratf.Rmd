@@ -27,3 +27,36 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(landlord)
 ```
+
+`landlord` helps me hone my craft by providing an opportunity to learn and 
+hopefully master packages, tools and paradigms. Typically, inspiration
+is taken from these references manuals.
+
+* [Manuals on CRAN](https://cran.r-project.org/manuals.html)
+* [R Packages](https://r-pkgs.org/)
+* [Advanced R](https://adv-r.hadley.nz/)
+* [R for data science](https://r4ds.had.co.nz/)
+* [Extending R](https://www.routledge.com/Extend-ing-R/Chambers/p/book/9781498775717)
+* [Mastering Shiny](https://mastering-shiny.org/)
+* [Engineering with Shiny](https://engineering-shiny.org/)
+
+This is furthermore a way to demonstrate competence to potential customers.
+
+## Object Oriented Programming (OOP)
+
+As I bring R code to production, a basic understanding of OOP can support more 
+effective communication with software engineers and richer software design.
+In [Advanced R](https://adv-r.hadley.nz/index.html), [Hadley Wickham](https://hadley.nz/)
+presents various ways to do [OOP in R](https://adv-r.hadley.nz/oo.html#oop-in-r).
+I chose to focus on R6 in this project because
+
+1. R6 benefits from a full fledged [documentation](https://r6.r-lib.org/)
+1. R6 resembles OOP in Python which fellows data scientist often use
+1. S4 seems too strict a start point for such a simple project
+1. S3 seems so simple as to be tested in client project
+
+In practice, investors, properties and objects are implemented as R6 classes and
+combined into a the investment R6 class.
+
+## REST API
+
