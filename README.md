@@ -57,8 +57,9 @@ You can also embed plots, for example:
 
 For more about how to use `landlord`, read the introduction vignette.
 
-## Training and showcase
+## Design choices
 
 `landlord` helps its developer hone his craft too by providing an
 opportunity to learn and hopefully master packages, tools and paradigms.
-This is documented in the design vignette.
+As a result, the code has more features than needed. The design choices
+and their rationales are documented in the design vignette.
