@@ -19,3 +19,7 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Enhances: 
+    DiagrammeRsvg (>= 0.1),
+    DiagrammeR (>= 1.0.9),
+    rsvg (>= 2.3.0)
