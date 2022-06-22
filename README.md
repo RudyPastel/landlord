@@ -8,10 +8,9 @@
 
 > Decide whether a rental property investment is profitable
 
-`landlord` helps budding investors in their first steps. For an
-investor, a property and a loan, it calculates future cash flows and
-profitability. For convenience sake, this can be done via a Shiny
-dashboard too.
+`landlord` helps budding investors in their first steps. Given a
+property and a loan, it calculates future cash flows and profitability.
+For convenience sake, this can be done via a Shiny dashboard too.
 
 ## Installation
 
@@ -56,13 +55,10 @@ You can also embed plots, for example:
 
 <img src="man/figures/README-pressure-1.png" width="100%" />
 
-For more about how to use `landlord`, read the introduction vignette
-with
-`utils::RShowDoc(what = 'intro', type = "html", package = 'landlord')`.
+For more about how to use `landlord`, read the introduction vignette.
 
 ## Training and showcase
 
 `landlord` helps its developer hone his craft too by providing an
 opportunity to learn and hopefully master packages, tools and paradigms.
-This is documented in the craft vignette:
-`utils::RShowDoc(what = 'craft', type = "html", package = 'landlord')`.
+This is documented in the design vignette.

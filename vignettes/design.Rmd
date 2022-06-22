@@ -1,0 +1,95 @@
+---
+title: "Design"
+author: "Rudy Pastel"
+date: "`r format(Sys.time(), '%A %d %B %Y')`"
+output: 
+  rmarkdown::html_vignette:
+  html_document:
+    fig_caption: false
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 3
+vignette: >
+  %\VignetteIndexEntry{design}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(landlord)
+```
+
+Planning ahead improves software engineering by informing thought through design
+choices. This vignette documents these choices and there rationales.
+
+
+## Users, UX and deployment
+
+[Engineering with Shiny](https://engineering-shiny.org/) suggests to think ahead
+users, UX and deployment.
+
+### Personnas
+
+Rudy, Ralph and Jeremy are three cousins interested in real estate investments.
+They want to identify worthwhile opportunities by evaluating simple indicators.
+
+
+* Jeremy has real estate investment experience: he can name indicators of interest
+to evaluate investments. He is a fitness coach and has no technical knowledge.
+* Ralph is new to real estate investment and wants very safe investments.
+Ralph is a product manager and will have suggestions about UX. He can however
+not program.
+* Rudy is new to real estate investment and is willing to loose some money to learn.
+Rudy studied mathematics, is tech literate and actually programs `landlord`.
+
+### Device used to browse the app
+
+
+For three users, developing for multiple devices would be excessive. The app
+will be made for desktop use. Other devices may be considered later for practice
+sake.
+
+
+### Deployment
+
+The app will be publicly accessible on [www.shinyapps.io](https://www.shinyapps.io/)
+in the free tier. The code will be public available on 
+[Github](https://github.com/RudyPastel/landlord).
+
+
+## Object Oriented Programming (OOP)
+
+As I bring R code to production, a basic understanding of OOP can support more 
+effective communication with software engineers and richer software design.
+In [Advanced R](https://adv-r.hadley.nz/index.html), [Hadley Wickham](https://hadley.nz/)
+presents various ways to do [OOP in R](https://adv-r.hadley.nz/oo.html#oop-in-r).
+I chose to focus on R6 in this project because
+
+1. R6 benefits from a full fledged [documentation](https://r6.r-lib.org/)
+1. R6 resembles OOP in Python which fellows data scientist often use
+1. S4 seems too strict a start point for such a simple project
+1. S3 seems so simple as to be tested in client project
+
+In practice, investors, properties and objects are implemented as R6 classes and
+combined into a the investment R6 class.
+
+## REST API
+
+## References
+
+* [Manuals on CRAN](https://cran.r-project.org/manuals.html)
+* [R Packages](https://r-pkgs.org/)
+* [Advanced R](https://adv-r.hadley.nz/)
+* [R for data science](https://r4ds.had.co.nz/)
+* [Extending R](https://www.routledge.com/Extend-ing-R/Chambers/p/book/9781498775717)
+* [Mastering Shiny](https://mastering-shiny.org/)
+* [Engineering with Shiny](https://engineering-shiny.org/)
