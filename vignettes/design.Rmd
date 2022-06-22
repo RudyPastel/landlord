@@ -12,7 +12,7 @@ output:
       smooth_scroll: false
     toc_depth: 3
 vignette: >
-  %\VignetteIndexEntry{design}
+  %\VignetteIndexEntry{Design}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -24,10 +24,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(landlord)
-```
-
 Planning ahead improves software engineering by informing thought through design
 choices. 
 
@@ -37,6 +33,14 @@ choices.
 
 This vignette documents my choices and my rationales.
 
+## Goal
+
+> Decide whether a rental property investment is profitable
+
+`landlord` helps budding investors in their first steps. Given a property and a
+loan, it calculates future cash flows and profitability.
+
+![Investment concept map](.\images\investmentConceptMap.png){width=100%}
 
 ## Users, UX and deployment
 

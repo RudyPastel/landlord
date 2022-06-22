@@ -8,7 +8,7 @@
 rm(list = ls())
 
 # save graph to file ---------------------------------------------------------------------------------
-saveGraph = !TRUE
+saveGraph = TRUE
 path = 'vignettes/images/investmentConceptMap.png'
 # Load the packages ---------------------------------------------------------------------------
 
@@ -35,28 +35,36 @@ diagrammeString = paste( '
 
                          # several package "node" statements
                          node [shape = box, fontname = Helvetica, fontcolor = black]
-                         B [label = <DataImportFramework> ];
+                         Investor [label = <Investor> ];
                          subgraph {
                             rank = same;
-                            E [label = <LH6MetaWrapper> ];
-                            D [label = <LH6SQL> ];
-                            L1 [label = <Package A> ];
-                            L2 [label = <Package B> ];
+                            Property [label = <Property> ];
+                            Loan [label = <Loan> ];
                          }
-                        C [label = <ImportUtils> ];
+                         subgraph {
+                              rank = same;
+                              Income [label = <Income> ];
+                              Spending [label = <Spending> ];
+                         }
+                         Cashflow [label = <Cash flow> ];
+                         landlord [label = <landlord> color=blue fontcolor = blue];
 
 
                          # several "edge" statements
                          # A->B [label = <interfaces with>, dir = both]
-                         {B, D, E}->C
-                         E->D
-                         B->{D E}
-                         L1->L2 [label = "depends \n on"]
+                         Investor->Property [label = "finds"]
+                         Investor->Loan [label = "pays \n down payment"]
+                         Property->Loan [label = "requires capital"]
+                         Property->Income [label = "increases"]
+                         {Property Loan}->Spending [label = "increases"]
+                         Income->Cashflow [label = "increases"]
+                         Spending->Cashflow [label = "decreases"]
+                         landlord->Cashflow [label = "evaluates"]
                          }
                          ')
 
 
-# Build the disgramm --------------------------------------------------------------------------
+# Build the diagramm2 --------------------------------------------------------------------------
 
 DiagrammeR::grViz(diagrammeString)
 
@@ -65,4 +73,4 @@ if (!saveGraph) {
   path = tempfile()
 }
 svg = charToRaw(DiagrammeRsvg::export_svg(DiagrammeR::grViz(diagrammeString)))
-rsvg::rsvg_png(svg = svg, file = path, width = 1260, height = 385 )
+rsvg::rsvg_png(svg = svg, file = path, width = 1260, height = 1260 )
