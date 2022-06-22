@@ -40,7 +40,10 @@ This vignette documents my choices and my rationales.
 `landlord` helps budding investors in their first steps. Given a property and a
 loan, it calculates future cash flows and profitability.
 
-![Investment concept map](.\images\investmentConceptMap.png){width=100%}
+![Investment concept map with landlord cash flow evaluation](.\images\investmentConceptMap.png){width=100%}
+
+This is a naïve investment mental model but it is rich enough to practice 
+R programming in a somewhat realistic context.
 
 ## Users, UX and deployment
 
@@ -81,7 +84,7 @@ in the free tier. The code will be public available on
 code as a [R package](https://r-pkgs.org/) and provides an opinionated framework
 called `{golem}` which promises production grade Shiny dashboard. Given the 
 customer's interest in production grade R development and the scarcity of skilled
-developer, this seems a valuable skill. Confronting my practice to their principles
+developers, this seems a valuable skill. Confronting my practice to their principles
 may prove very beneficial. 
 
 
@@ -94,7 +97,7 @@ presents various ways to do [OOP in R](https://adv-r.hadley.nz/oo.html#oop-in-r)
 I chose to focus on R6 in this project because
 
 1. R6 benefits from a full fledged [documentation](https://r6.r-lib.org/)
-1. R6 resembles OOP in Python which fellows data scientist often use
+1. R6 resembles OOP in Python which fellow data scientists often use
 1. S4 seems too strict a start point for such a simple project
 1. S3 seems so simple as to be tested in client project
 

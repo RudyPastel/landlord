@@ -59,7 +59,7 @@ diagrammeString = paste( '
                          {Property Loan}->Spending [label = "increases"]
                          Income->Cashflow [label = "increases"]
                          Spending->Cashflow [label = "decreases"]
-                         landlord->Cashflow [label = "evaluates"]
+                         landlord->Cashflow [label = "evaluates" color=blue fontcolor = blue]
                          }
                          ')
 
