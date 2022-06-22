@@ -29,15 +29,21 @@ library(landlord)
 ```
 
 Planning ahead improves software engineering by informing thought through design
-choices. This vignette documents these choices and there rationales.
+choices. 
+
+* `landlord` is implemented within the [{golem}](https://engineering-shiny.org/) framework
+* `landlord` relies on [R6](https://r6.r-lib.org/) object oriented programming
+* `landlord` exposes a REST API implemented with [plumber](https://www.rplumber.io/)
+
+This vignette documents my choices and my rationales.
 
 
 ## Users, UX and deployment
 
-[Engineering with Shiny](https://engineering-shiny.org/) suggests to think ahead
-users, UX and deployment.
+Project circumstances usually define these aspects. However, in this personal
+project, I will, base on my experience.
 
-### Personnas
+### Personas
 
 Rudy, Ralph and Jeremy are three cousins interested in real estate investments.
 They want to identify worthwhile opportunities by evaluating simple indicators.
@@ -65,6 +71,15 @@ The app will be publicly accessible on [www.shinyapps.io](https://www.shinyapps.
 in the free tier. The code will be public available on 
 [Github](https://github.com/RudyPastel/landlord).
 
+## `{golem}` framework
+
+[Engineering with Shiny](https://engineering-shiny.org/) suggests to structure the
+code as a [R package](https://r-pkgs.org/) and provides an opinionated framework
+called `{golem}` which promises production grade Shiny dashboard. Given the 
+customer's interest in production grade R development and the scarcity of skilled
+developer, this seems a valuable skill. Confronting my practice to their principles
+may prove very beneficial. 
+
 
 ## Object Oriented Programming (OOP)
 
@@ -84,12 +99,18 @@ combined into a the investment R6 class.
 
 ## REST API
 
+Restful APIs are a staple of modern software development and it is important I
+can develop APIs to my R products. The [plumber](https://www.rplumber.io/) is the
+standard tool and will be used to return some information about the loan.
+
 ## References
 
-* [Manuals on CRAN](https://cran.r-project.org/manuals.html)
-* [R Packages](https://r-pkgs.org/)
-* [Advanced R](https://adv-r.hadley.nz/)
-* [R for data science](https://r4ds.had.co.nz/)
-* [Extending R](https://www.routledge.com/Extend-ing-R/Chambers/p/book/9781498775717)
-* [Mastering Shiny](https://mastering-shiny.org/)
-* [Engineering with Shiny](https://engineering-shiny.org/)
+* [Manuals on CRAN](https://cran.r-project.org/manuals.html): the mother of all things R
+* [R Packages](https://r-pkgs.org/): a package development tutorial
+* [Advanced R](https://adv-r.hadley.nz/): an introduction to the finer use of the R languages
+* [R for data science](https://r4ds.had.co.nz/): an introduction to the tidyverse for data science
+* [Extending R](https://www.routledge.com/Extend-ing-R/Chambers/p/book/9781498775717): the technical speard head of R language extension
+* [Mastering Shiny](https://mastering-shiny.org/): core Shiny dashboards development techniques
+* [Engineering with Shiny](https://engineering-shiny.org/): principled development of productive Shiny dashboards
+* [plumber](https://www.rplumber.io/) a tool for build REST APIs with R
+* [R6](https://r6.r-lib.org/): encapsulated object-oriented programming for R
