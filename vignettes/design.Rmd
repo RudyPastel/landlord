@@ -24,14 +24,23 @@ knitr::opts_chunk$set(
 )
 ```
 
-Planning ahead improves software engineering by informing thought through design
-choices. 
+> Design i.e. planning ahead improves software engineering. 
+
+Given the increasing demand for production grade R development and the scarcity 
+of skilled R developers, principled, articulated effective craftsmanship is an 
+asset. As a consequence, I created the `landlord` project as both a training 
+ground and a demonstration of  my skills. In particular, this vignette documents
+my choices and my rationales. Comments, evaluations and improvement suggestions 
+are welcomed.
+
+
+## Overview of key choices
 
 * `landlord` is implemented within the [{golem}](https://engineering-shiny.org/) framework
 * `landlord` relies on [R6](https://r6.r-lib.org/) object oriented programming
 * `landlord` exposes a REST API implemented with [plumber](https://www.rplumber.io/)
 
-This vignette documents my choices and my rationales.
+
 
 ## Goal
 
@@ -43,9 +52,10 @@ loan, it calculates future cash flows and profitability.
 ![Investment concept map with landlord cash flow evaluation](.\images\investmentConceptMap.png){width=100%}
 
 This is a naïve investment mental model but it is rich enough to practice 
-R programming in a somewhat realistic context.
+R programming in a somewhat realistic context: my cousin, my brother and I *are*
+budding real estate investors.
 
-## Users, UX and deployment
+## Users, deployment and user experience
 
 Project circumstances usually define these aspects. However, in this personal
 project, I will, base on my experience.
@@ -64,28 +74,29 @@ not program.
 * Rudy is new to real estate investment and is willing to loose some money to learn.
 Rudy studied mathematics, is tech literate and actually programs `landlord`.
 
-### Device used to browse the app
-
+### Deployment
 
 For three users, developing for multiple devices would be excessive. The app
 will be made for desktop use. Other devices may be considered later for practice
-sake.
+sake. Furthermore, I want the code to be accessible to potential customers. When
+the code is mature, I will consider deploying it to [CRAN](https://cran.r-project.org/).
 
+Accordingly, 
 
-### Deployment
+* The app will be publicly accessible on [www.shinyapps.io](https://www.shinyapps.io/) in the free tier
+* The code is available on [Github](https://github.com/RudyPastel/landlord)
 
-The app will be publicly accessible on [www.shinyapps.io](https://www.shinyapps.io/)
-in the free tier. The code will be public available on 
-[Github](https://github.com/RudyPastel/landlord).
+### User experience
+
+I will stick to my core development competences and [Shiny dashboards](https://rstudio.github.io/shinydashboard/)
+to enable the `landlord` usage via mouse and clicks.
 
 ## `{golem}` framework
 
 [Engineering with Shiny](https://engineering-shiny.org/) suggests to structure the
 code as a [R package](https://r-pkgs.org/) and provides an opinionated framework
-called `{golem}` which promises production grade Shiny dashboard. Given the 
-customer's interest in production grade R development and the scarcity of skilled
-developers, this seems a valuable skill. Confronting my practice to their principles
-may prove very beneficial. 
+called `{golem}` which promises production grade Shiny dashboard. Confronting 
+my practice to their principles may prove very beneficial. 
 
 
 ## Object Oriented Programming (OOP)
