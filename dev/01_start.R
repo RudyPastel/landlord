@@ -20,12 +20,14 @@
 ##
 golem::fill_desc(
   pkg_name = "landlord", # The Name of the package containing the App
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
+  pkg_title = "Decide whether a rental property investment is profitable", # The Title of the package containing the App
+  pkg_description = "For an investor, a property and a loan, the landlord package calculates
+  future cash flows and profitability. For convenience sake, this can be done
+  via a Shiny dashboard too.", # The Description of the package containing the App
+  author_first_name = "Rudy", # Your First Name
+  author_last_name = "Pastel", # Your Last Name
+  author_email = "rudy.pastel@gmail.com", # Your Email
+  repo_url = "https://github.com/RudyPastel/landlord" # The URL of the GitHub Repo (optional)
 )
 
 ## Set {golem} options ----
