@@ -15,7 +15,9 @@ Suggests:
     rmarkdown,
     DiagrammeRsvg (>= 0.1),
     DiagrammeR (>= 1.0.9),
-    rsvg (>= 2.3.0)
+    rsvg (>= 2.3.0),
+    testthat (>= 3.0.0),
+    spelling
 LazyData: true
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -23,3 +25,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 URL: https://github.com/RudyPastel/landlord
 BugReports: https://github.com/RudyPastel/landlord/issues
+Config/testthat/edition: 3
+Language: en-US
