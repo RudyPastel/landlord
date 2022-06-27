@@ -59,7 +59,7 @@ For more about how to use `landlord`, read the introduction vignette.
 
 ## Design choices
 
-`landlord` helps its developer hone his craft too by providing an
+`landlord` helps its developer hone his craft by providing an
 opportunity to learn and hopefully master packages, tools and paradigms.
 As a result, the code has more features than needed. The design choices
 and their rationales are documented in the design vignette.
