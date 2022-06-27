@@ -9,3 +9,4 @@ $run_dev.*
 ^doc$
 ^Meta$
 ^LICENSE\.md$
+^CODE_OF_CONDUCT\.md$
