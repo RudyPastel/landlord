@@ -14,12 +14,18 @@ Description: For an investor, a property and a loan, the landlord package calcul
 License: `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.1.2
 Suggests: 
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-Enhances: 
+Imports: 
+    config (>= 0.3.1),
+    golem (>= 0.3.2),
+    shiny (>= 1.7.1)
+Suggests: 
     DiagrammeRsvg (>= 0.1),
     DiagrammeR (>= 1.0.9),
     rsvg (>= 2.3.0)
+LazyData: true
+RoxygenNote: 7.1.1
