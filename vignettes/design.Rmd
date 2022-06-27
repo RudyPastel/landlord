@@ -46,14 +46,16 @@ are welcomed.
 
 > Decide whether a rental property investment is profitable
 
-`landlord` helps budding investors in their first steps. Given a property and a
-loan, it calculates future cash flows and profitability.
+Budding investors have a simple investment mental model.
+
 
 ![Investment concept map with landlord cash flow evaluation](.\images\investmentConceptMap.png){width=100%}
 
-This is a naïve investment mental model but it is rich enough to practice 
-R programming in a somewhat realistic context: my cousin, my brother and I *are*
-budding real estate investors.
+
+`landlord` helps budding investors in their first steps. Given a property and a 
+loan, it calculates future cash flows and profitability.  The assumed investment 
+model is the following. This is a naïve  but it is rich enough to practice 
+R programming in a somewhat realistic context.
 
 ## Users, deployment and user experience
 
